@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doli village</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+        * {
+            font-family: 'Poppins', Open Sans, sans-serif;
+        }
+
+        .bg-primary {
+            background-color: #002366 !important;
+        }
+
+        .text-primary {
+            color: #002366 !important;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #002366;
+            border-color: #002366;
+        }
+
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #001f5b;
+            border-color: #001a52;
+        }
+
+        .btn-primary:focus,
+        .btn-primary.focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 35, 102, 0.5);
+        }
+
+        .border-primary {
+            border-color: #002366 !important;
+        }
+
+        .divider {
+            border-left: 1px solid #fff;
+            height: 100%;
+            margin: 0 10px;
+        }
+
+        .divider-black {
+            border-left: 1px solid #000;
+        }
+
+        .header-center-heading h3 {
+            font-size: 1.6rem;
+            color: #002366;
+        }
+
+        /* responsive heading */
+
+        @media(max-width: 768px) {
+            .header-center-heading h3 {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media(min-width: 768px) {
+            .header-center-heading h3 {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media(min-width: 992px) {
+            .header-center-heading h3 {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media(min-width: 1200px) {
+            .header-center-heading h3 {
+                font-size: 1.7rem;
+            }
+        }
+
+
+        .services:hover {
+            background: #e1e0e0 !important;
+        }
+
+
+        /* Hover */
+        .hover-bg-black:hover {
+            background: #000 !important;
+            color: #fff !important;
+        }
+
+        .font-size-18 {
+            font-size: 18px;
+        }
+
+        .font-size-26 {
+            font-size: 26px;
+        }
+
+        /* font weight */
+
+        .fw-500 {
+            font-weight: 500;
+        }
+
+        .fw-600 {
+            font-weight: 600;
+        }
+
+        .fw-700 {
+            font-weight: 700;
+        }
+
+        /* text wrap */
+
+        .text-wrap {
+            text-wrap: normal !important;
+        }
+
+        .text-nowrap {
+            text-wrap: nowrap !important;
+        }
+
+        .hover-to-dark {
+            transition: 0.5s;
+        }
+
+        .hover-to-dark:hover {
+            filter: brightness(0.5);
+        }
+
+
+        .counter-box {
+            background: radial-gradient(98.05% 261.61% at 1.95% 3.59%, hsla(0, 0%, 100%, .4) 0, hsla(0, 0%, 100%, 0) 100%);
+            backdrop-filter: blur(3px);
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid #f1f1f1;
+        }
+
+        @media (max-width: 768px) {
+            .counter-box {
+                width: 100% !important;
+            }
+        }
+
+        .slider-item {
+            height: 600px;
+        }
+
+
+        @media (max-width: 768px) {
+            .slider-item {
+                height: auto;
+            }
+
+            .header-center-heading h3 {
+                text-align: center;
+            }
+
+            .header-center-heading {
+                border-top: 2px solid #f1f1f1;
+                padding-top: 15px;
+            }
+
+            footer ul {
+                padding-left: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container bg-white">
+            <div class="row d-flex align-items-center py-2 px-0 mx-0">
+                <div class="col-12 col-md-3">
+                    <div class="py-2 d-flex justify-content-center align-items-center">
+                        <img src="https://api.mbm.ac.in/assets/7e31e07e-a831-4ed2-a857-c60f3f5fc50f"
+                            style="width:20.5%;">
+                        <img src="https://api.mbm.ac.in/assets/8e24608e-e76c-4998-b4a2-64c90b2b9751"
+                            class="border-start border-2 ms-1 ps-2 w-25">
+                        <div>
+                            <p class="mb-0" style="color: orange;">मेरा गाँव</p>
+                            <p class="mb-0" style="color: green;">मेरी पहचान</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 header-center-heading">
+                    <div>
+                        <h3 class="mb-0 p-0 fw-700 text-primary">परंपरा, संस्कृति और विकास का सम्मिश्रण - डोली, जोधपुर
+                        </h3>
+                        <h3 class="mb-0 p-0 fw-600 text-primary">Blend of tradition, culture and development</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 d-none d-lg-block text-center">
+                    <img class="w-50" src="https://api.mbm.ac.in/assets/c43a731e-e657-4767-a9b4-0260c910cf12"
+                        style="object-fit: contain;aspect-ratio: 3/2;" />
+                    <div>
+                        <span class="mb-0" style="font-size:10px;">MBM University Jodhpur</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section style="background: #002366;">
+        <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+            <p class="text-white mb-0 py-2">Share your thoughts & perspective on the development of our village... <a
+                    href="" style="color: #ff9e6e;"> Click
+                    here</a></p>
+        </marquee>
+    </section>
+    <!-- home slider -->
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active slider-item">
+                    <video class="img-fluid hover-to-dark" autoplay loop muted>
+                        <source src="https://api.mbm.ac.in/assets/1531dff0-3758-4d2a-8dba-a0986d3f65b5"
+                            type="video/mp4" />
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item slider-item">
+                    <img src="https://api.mbm.ac.in/assets/5738229d-2fff-4e00-bae2-6331f18298b2"
+                        class="img-fluid hover-to-dark w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Developed Under the Village Adoption Initiative by MBM University, Jodhpur</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos aliquam necessitatibus sit qui
+                            ipsa, sed harum nesciunt provident facere eligendi, excepturi impedit? Illo repudiandae, eum
+                            aperiam iusto doloremque voluptatibus cupiditate?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home btn -->
+    <section class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-2 mb-md-0">
+                    <div class="text-center services py-4" style="background-color: #fcf4e8;">
+                        <a href="#" target="_blank" class="font-size-26 text-decoration-none">
+                            <img src="https://api.mbm.ac.in/assets/5312228f-5eda-4a2f-90f4-01743dd871ab"
+                                style="width: 45px;height: 45px;" />
+                            <span class="text-primary mx-2">Information</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-2 mb-md-0">
+                    <div class="text-center services py-4" style="background-color: #ebedfc;">
+                        <a href="#" target="_blank" class="font-size-26 text-decoration-none">
+                            <img src="https://api.mbm.ac.in/assets/daa14dae-514d-4185-bdc3-d14609cae956"
+                                style="width: 45px;height: 45px;" />
+                            <span class="text-primary mx-2">Add Your Suggestion</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: #f0f8ff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-9 mb-5">
+                    <div class="card shadow p-3">
+                        <div class="row">
+                            <div class="col-12 col-md-9 mb-4 order-2">
+                                <span class="font-size-18">Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Inventore repellat eaque, nostrum praesentium ducimus
+                                    omnis expedita in esse officia pariatur reiciendis fugit. Autem at voluptatum unde
+                                    impedit sed dolorem quibusdam.
+                                </span>
+                                <br>
+                                <br>
+                                <span class="font-size-18">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Illum voluptatibus in, illo dignissimos perspiciatis quibusdam fuga vero nesciunt
+                                    velit veritatis officia doloremque laboriosam, itaque aspernatur debitis ratione
+                                    voluptatem assumenda fugit.</span>
+                                <div class="d-flex mt-2">
+                                    <button
+                                        class="btn btn-primary mt-3 rounded-0 py-2 mx-0 text-uppercase hover-bg-black shadow-none">Read
+                                        More</button>
+                                    <button class="btn btn-warning mt-3 rounded-0 py-2 mx-0 shadow-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 mb-3 order-1 order-md-2">
+                                <div class="img-box border pt-4 pb-1 text-center">
+                                    <div style="background-color: #ecae50;" class="w-75 m-auto">
+                                        <img src="https://api.mbm.ac.in/assets/79c991fe-74f1-497a-acec-2b516d95f651"
+                                            style="object-fit: contain;" class="w-100" />
+                                    </div>
+                                    <div class="px-1 mt-3">
+                                        <h5 class="font-size-18 mt-2 fw-600">Panchayat President, Doli</h5>
+                                        <h5 class="font-size-18 text-primary fw-600">Unknown Kumari</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-5">
+                    <div class="card shadow h-100">
+                        <div class="card-header text-center bg-primary text-white">
+                            <h4 class="mb-0">What's new</h4>
+                        </div>
+                        <div class="card-body py-0 my-0">
+                            <marquee class="h-100" behavior="scroll" direction="up" onmouseover="this.stop();"
+                                onmouseout="this.start();">
+                                <ul class="list-group">
+                                    <li class="list-item mb-3">
+                                        <a href="#" target="_blank" class="text-decoration-none text-primary">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </a>
+                                    </li>
+                                    <li class="list-item mb-3">
+                                        <a href="#" target="_blank" class="text-decoration-none text-primary">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </a>
+                                    </li>
+                                    <li class="list-item mb-3">
+                                        <a href="#" target="_blank" class="text-decoration-none text-primary">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </a>
+                                    </li>
+                                </ul>
+                            </marquee>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container py-5">
+            <h1 class="text-primary fw-600 mb-4">Village Glipmses</h1><br>
+            <div id="glipmsesIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators" style="bottom: -70px;">
+                    <button type="button" data-bs-target="#glipmsesIndicators" data-bs-slide-to="0"
+                        class="active bg-primary" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#glipmsesIndicators" data-bs-slide-to="1" class="bg-primary"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#glipmsesIndicators" data-bs-slide-to="2" class="bg-primary"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 col-md-3 mb-3">
+                                <img src="https://api.mbm.ac.in/assets/ee1d42c1-aa81-4ae5-935b-f610c90ff036"
+                                    class="w-100" alt="">
+                                <div class="bg-primary p-2 text-white">
+                                    Lorem ipsum, dolor sit amet conse adipisicing elit.
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 mb-3"><img
+                                    src="https://api.mbm.ac.in/assets/1235e972-8533-4ea0-865b-7880bd4005b9"
+                                    class="w-100" alt="">
+                                <div class="bg-primary p-2 text-white">
+                                    Lorem ipsum, dolor sit amet conse adipisicing elit.
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 mb-3"><img
+                                    src="https://api.mbm.ac.in/assets/37deb942-56d1-4e32-9021-c53d2e8601cd"
+                                    class="w-100" alt="">
+                                <div class="bg-primary p-2 text-white">
+                                    Lorem ipsum, dolor sit amet conse adipisicing elit.
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 mb-3">
+                                <img src="https://api.mbm.ac.in/assets/ee1d42c1-aa81-4ae5-935b-f610c90ff036"
+                                    class="w-100" alt="">
+                                <div class="bg-primary p-2 text-white">
+                                    Lorem ipsum, dolor sit amet conse adipisicing elit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-3 mb-3">
+                                <img src="https://api.mbm.ac.in/assets/ee1d42c1-aa81-4ae5-935b-f610c90ff036"
+                                    class="w-100" alt="">
+                                <div class="bg-primary p-2 text-white">
+                                    Lorem ipsum, dolor sit amet conse adipisicing elit.
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 mb-3"><img
+                                    src="https://api.mbm.ac.in/assets/1235e972-8533-4ea0-865b-7880bd4005b9"
+                                    class="w-100" alt="">
+                                <div class="bg-primary p-2 text-white">
+                                    Lorem ipsum, dolor sit amet conse adipisicing elit.
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 mb-3"><img
+                                    src="https://api.mbm.ac.in/assets/37deb942-56d1-4e32-9021-c53d2e8601cd"
+                                    class="w-100" alt="">
+                                <div class="bg-primary p-2 text-white">
+                                    Lorem ipsum, dolor sit amet conse adipisicing elit.
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 mb-3">
+                                <img src="https://api.mbm.ac.in/assets/ee1d42c1-aa81-4ae5-935b-f610c90ff036"
+                                    class="w-100" alt="">
+                                <div class="bg-primary p-2 text-white">
+                                    Lorem ipsum, dolor sit amet conse adipisicing elit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-3 mb-3">
+                                <img src="https://api.mbm.ac.in/assets/ee1d42c1-aa81-4ae5-935b-f610c90ff036"
+                                    class="w-100" alt="">
+                                <div class="bg-primary p-2 text-white">
+                                    Lorem ipsum, dolor sit amet conse adipisicing elit.
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 mb-3"><img
+                                    src="https://api.mbm.ac.in/assets/1235e972-8533-4ea0-865b-7880bd4005b9"
+                                    class="w-100" alt="">
+                                <div class="bg-primary p-2 text-white">
+                                    Lorem ipsum, dolor sit amet conse adipisicing elit.
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 mb-3"><img
+                                    src="https://api.mbm.ac.in/assets/37deb942-56d1-4e32-9021-c53d2e8601cd"
+                                    class="w-100" alt="">
+                                <div class="bg-primary p-2 text-white">
+                                    Lorem ipsum, dolor sit amet conse adipisicing elit.
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 mb-3">
+                                <img src="https://api.mbm.ac.in/assets/ee1d42c1-aa81-4ae5-935b-f610c90ff036"
+                                    class="w-100" alt="">
+                                <div class="bg-primary p-2 text-white">
+                                    Lorem ipsum, dolor sit amet conse adipisicing elit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex mt-5">
+                <button class="btn btn-primary mt-3 rounded-0 py-2 mx-0 text-uppercase hover-bg-black shadow-none">View
+                    More</button>
+                <button class="btn btn-warning mt-3 rounded-0 py-2 mx-0 shadow-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5 d-flex justify-content-center align-items-center"
+        style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('https://api.mbm.ac.in/assets/f8ff15e1-5ad2-44b2-b2e0-48a2cad3aab0');background-repeat: no-repeat;background-position: center; background-size: cover;height:50vh;background-attachment: fixed;">
+        <div class="container text-center text-white">
+            <h2>Welcome to Our Village</h2>
+            <p>Discover our vibrant community nestled in the heart of nature.</p><br />
+            <div class="d-flex counter-box justify-content-around w-50 m-auto">
+                <div class="text-center text-white">
+                    <h1>700+</h1>
+                    <span>Population</span>
+                </div>
+                <div class="border-end"></div>
+                <div class="text-center text-white">
+                    <h1>500+</h1>
+                    <span>Houses</span>
+                </div>
+                <div class="border-end"></div>
+                <div class="text-center text-white">
+                    <h1>20+</h1>
+                    <span>Businesses</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights -->
+
+    <section class="highlights">
+        <div class="container py-5">
+            <h1 class="text-primary fw-600 mb-4">Events & News</h1>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+                    <div class="card shadow-lg">
+                        <img class="card-img-top"
+                            src="https://api.mbm.ac.in/assets/1235e972-8533-4ea0-865b-7880bd4005b9"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-primary fw-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta velit veniam eligendi
+                                rerum reprehenderit nulla omnis libero rem iste!
+                                <a href="#">view ...</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+                    <div class="card shadow-lg">
+                        <img class="card-img-top"
+                            src="https://api.mbm.ac.in/assets/37deb942-56d1-4e32-9021-c53d2e8601cd"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-primary fw-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta velit veniam eligendi
+                                rerum reprehenderit nulla omnis libero rem iste!
+                                <a href="#">view ...</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+                    <div class="card shadow-lg">
+                        <img class="card-img-top"
+                            src="https://api.mbm.ac.in/assets/ee1d42c1-aa81-4ae5-935b-f610c90ff036"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-primary fw-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta velit veniam eligendi
+                                rerum reprehenderit nulla omnis libero rem iste!
+                                <a href="#">view ...</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card shadow-lg">
+                        <img class="card-img-top"
+                            src="https://api.mbm.ac.in/assets/1235e972-8533-4ea0-865b-7880bd4005b9"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="text-primary fw-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta velit veniam eligendi
+                                rerum reprehenderit nulla omnis libero rem iste!
+                                <a href="#">view ...</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex mt-5">
+                <button class="btn btn-primary mt-3 rounded-0 py-2 mx-0 text-uppercase hover-bg-black shadow-none">View
+                    More</button>
+                <button class="btn btn-warning mt-3 rounded-0 py-2 mx-0 shadow-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- map -->
+
+    <section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7161.406552009346!2d72.88201329209795!3d26.173791408380964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394187d207a2a375%3A0x361e0c53cd03707a!2sDoli%2C%20Rajasthan%20342014!5e0!3m2!1sen!2sin!4v1720148267602!5m2!1sen!2sin"
+            style="border:0;" allowfullscreen="" loading="lazy" width="100%" height="400"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <!-- footer -->
+    <footer style="background-color: #1747a0;" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 mb-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="bg-white p-3 mb-2 d-flex align-items-center">
+                            <img src="https://api.mbm.ac.in/assets/8e24608e-e76c-4998-b4a2-64c90b2b9751" class="w-25" />
+                            <div class="ps-3">
+                                <p class="mb-0" style="color: orange;">मेरा गाँव</p>
+                                <p class="mb-0" style="color: green;">मेरी पहचान</p>
+                            </div>
+                        </div>
+                        <span class="text-white fw-500">
+                            Doli Village, Jodhpur
+                        </span>
+                    </a>
+                </div>
+                <div class="col-12 col-md-2 mb-3">
+                    <ul style="list-style: none;">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">About Doli</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Gallery</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Offices</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Information</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2 mb-3">
+                    <ul style="list-style: none;">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Suggestions</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div style="background-color: #002366;" class="rounded p-3" id="mbm-intro">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <img src="https://api.mbm.ac.in/assets/09cddce6-d3ad-4e8a-a71a-cd8ebad1137b"
+                                    class="w-25" />
+                            </div>
+                            <div class="col-12 text-center">
+                                <div class="pt-3 mt-3 border-top">
+                                    <h6 class="text-white">Developed Under the Village Adoption Initiative by MBM
+                                        University, Jodhpur</h6>
+                                    <h4>
+                                        <a class="text-decoration-none" href="#"
+                                            style="color: #ff9e6e;">www.mbm.ac.in</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container">
+        <h6 class="text-center py-2 mb-0">
+            <a href="#" class="text-dark text-decoration-none">© 2021 Doli Village, Jodhpur. All Rights
+                Reserved.</a>
+        </h6>
+    </div>
+    <div class="bg-primary">
+        <h6 class="text-center py-2 text-white mb-0">
+            This site is designed, hosted and maintained by
+            <a href="#" class="text-decoration-none" style="color: #ff9e6e;">MBM University</a>
+        </h6>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+/* font(size and more) */
+@import url('./font.css');
+
+* {
+    font-family: 'Poppins', Open Sans, sans-serif;
+}
+
+.bg-primary {
+    background-color: #002366 !important;
+}
+
+.text-primary {
+    color: #002366 !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #002366;
+    border-color: #002366;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #001f5b;
+    border-color: #001a52;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 35, 102, 0.5);
+}
+
+.border-primary {
+    border-color: #002366 !important;
+}
+
+.divider {
+    border-left: 1px solid #fff;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.divider-black {
+    border-left: 1px solid #000;
+}
+
+.header-center-heading h3 {
+    font-size: 1.6rem;
+    color: #002366;
+}
+
+/* responsive heading */
+
+@media(max-width: 768px) {
+    .header-center-heading h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media(min-width: 768px) {
+    .header-center-heading h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media(min-width: 992px) {
+    .header-center-heading h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media(min-width: 1200px) {
+    .header-center-heading h3 {
+        font-size: 1.7rem;
+    }
+}
+
+
+.services:hover {
+    background: #e1e0e0 !important;
+}
+
+
+/* Hover */
+.hover-bg-black:hover {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+/* 
+.threeList ul {
+    margin-top: 1.5rem;
+    padding-left: 0rem;
+    overflow: hidden;
+}
+
+.threeList ul li {
+    font-weight: bold;
+    position: relative;
+    margin-top: 0.5rem;
+    margin-bottom: 30px;
+}
+
+.threeList ul li p {
+    display: block;
+    font-size: 91%;
+    text-decoration: none;
+    color: #001f45;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.threeList ul li p .title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.threeList ul li p .counter {
+    padding: 20px 32px;
+    font-size: 32px;
+    width: 79px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+}
+
+@media (max-width: 480px) {
+    .threeList ul li p .title {
+        padding: 15px !important;
+        font-size: 14px !important;
+    }
+}
+
+.threeList ul li p .title {
+    padding: 23px 22px;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    background: linear-gradient(to left, #eceff5 50%, #80c58c 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    font-weight: 600;
+}
+ */
+
+/* froud */
+
+.fraud-button {
+    min-height: 150px;
+}
+
+.fraud-button:hover {
+    background: #060f3099;
+}
+
+.fraud-button a {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+.fraud-button a>div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.fraud-button-primaryText {
+    font-size: 113%;
+    font-weight: 500;
+}
+
+.fraud-button:hover:nth-child(n+2):hover .fraud-button-secondaryText {
+    height: 20px;
+    opacity: 1;
+}
+
+.fraud-button-secondaryText {
+    font-size: .7rem;
+    opacity: 0;
+    transition: all .25s ease;
+    height: 0;
+}
+
+.fraud-button .newp {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.fraud-button .newp>div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.fraud-button h2 {
+    font-size: 2rem;
+    letter-spacing: -.07rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+.fraud-button h2 span {
+    background-color: #060f3085;
+    line-height: 2.8rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.fraud-button:nth-child(1),
+.fraud-button:nth-child(2),
+.fraud-button:nth-child(4),
+.fraud-button:nth-child(5),
+.fraud-button:nth-child(7),
+.fraud-button:nth-child(8) {
+    border-right: 1px solid #f1f1f1;
+}
+
+.font-size-10 {
+    font-size: 10px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-22 {
+    font-size: 22px;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+.font-size-26 {
+    font-size: 26px;
+}
+
+.font-size-28 {
+    font-size: 28px;
+}
+
+.font-size-30 {
+    font-size: 30px;
+}
+
+.font-size-32 {
+    font-size: 32px;
+}
+
+.font-size-34 {
+    font-size: 34px;
+}
+
+.font-size-36 {
+    font-size: 36px;
+}
+
+.font-size-38 {
+    font-size: 38px;
+}
+
+.font-size-40 {
+    font-size: 40px;
+}
+
+.font-size-42 {
+    font-size: 42px;
+}
+
+.font-size-44 {
+    font-size: 44px;
+}
+
+.font-size-46 {
+    font-size: 46px;
+}
+
+.font-size-48 {
+    font-size: 48px;
+}
+
+.font-size-50 {
+    font-size: 50px;
+}
+
+/* font weight */
+
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+/* text wrap */
+
+.text-wrap {
+    text-wrap: normal !important;
+}
+
+.text-nowrap {
+    text-wrap: nowrap !important;
+}
+
+.hover-to-dark {
+    transition: 0.5s;
+}
+
+.hover-to-dark:hover {
+    filter: brightness(0.5);
+}
+
+
+.counter-box {
+    background: radial-gradient(98.05% 261.61% at 1.95% 3.59%, hsla(0, 0%, 100%, .4) 0, hsla(0, 0%, 100%, 0) 100%);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    .counter-box {
+        width: 100% !important;
+    }
+}
