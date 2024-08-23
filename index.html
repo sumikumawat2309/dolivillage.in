@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doli village</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         body::-webkit-scrollbar {
             display: none;
@@ -178,10 +182,72 @@
             }
 
         }
+
+        .vip {
+            margin-top: 55px;
+            margin-bottom: 55px;
+        }
+
+        .vip img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .vip h6{
+            text-align: center;
+            margin-top: 15px;
+            font-weight:bold;
+            font-size: 20px;
+        }
+        .vip p{
+            text-align: center;
+            color: rgb(92, 91, 91);
+        }
     </style>
 </head>
 
 <body>
+    <!-- navbar -->
+    <section style="background-color: black; height: 55px;" class="mb-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 d-flex justify-content-start align-items-start mt-2">
+                    <a href="#" class="text-decoration-none ms-3">
+                        <img src="./image/logo.png" alt="logo" width="40px">
+                        <span class="logo-text text-white p-2 top-3">DOLI</span>
+                    </a>
+                </div>
+                <div class="col-lg-9 d-flex justify-content-end align-items-end my-2">
+                    <ul class="nav" style="font-size: 15px;">
+                        <li class="nav-item ">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" href="about.html">About Village</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" href="office.html">Offices</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white " href="info.html">Information</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white " href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white " href="suggestion.html">Suggestion</a>
+                        </li>
+                        <li class="nav-item ">
+                            <i class="bi bi-search nav-link text-white"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
     <header>
         <div class="container bg-white">
             <div class="row d-flex align-items-center py-2 px-0 mx-0">
@@ -199,7 +265,7 @@
                 </div>
                 <div class="col-12 col-md-7 header-center-heading">
                     <div>
-                        <h3 class="mb-0 p-0 fw-700 text-primary">परंपरा, संस्कृति और विकास का सम्मिश्रण - डोली, जोधपुर
+                        <h3 class="mb-0 p-0 fw-700 text-primary">परंपरा, संस्कृति और विकास का सम्मिश्रण - डोली, जोधपुर
                         </h3>
                         <h3 class="mb-0 p-0 fw-600 text-primary">Blend of tradition, culture and development</h3>
                     </div>
@@ -238,19 +304,46 @@
                             type="video/mp4" />
                     </video>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5>Doli Village</h5>
+                        <p>Doli is a Village in Luni Tehsil in Jodhpur District of Rajasthan State, India. It belongs to
+                            Jodhpur Division . It is located 21 KM towards west from District head quarters Jodhpur. 10
+                            KM from Luni. 354 KM from State capital Jaipur</p>
                     </div>
                 </div>
                 <div class="carousel-item slider-item">
                     <img src="https://api.mbm.ac.in/assets/5738229d-2fff-4e00-bae2-6331f18298b2"
                         class="img-fluid hover-to-dark w-100" alt="">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>Developed Under the Village Adoption Initiative by MBM University, Jodhpur</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos aliquam necessitatibus sit qui
-                            ipsa, sed harum nesciunt provident facere eligendi, excepturi impedit? Illo repudiandae, eum
-                            aperiam iusto doloremque voluptatibus cupiditate?</p>
+                        <h5>Developed Under the Village Adoption Initiative by MBM University, Jodhpur</h5>
+                        <p>Doli is a vibrant and growing village that has seen significant development under the Village
+                            Adoption Initiative by MBM University, Jodhpur. Our community thrives with a commitment to
+                            progress and improvement, thanks to the dedicated efforts of our local leadership and the
+                            support from MBM University.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- VIP People -->
+    <section class="vip">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-4">
+                    <img src="./image/index/mbmu-vc-image.jpg" alt="pic" class="mt-5">
+                    <h6>Prof. Ajay Kumar Sharma</h6>
+                    <p>Vice Chancellor <br>MBM University, Jodhpur</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./image/index/Hon_ble-Governor-Kalraj-Mishra-thumb.png" alt="pic" width="50%"
+                        style="border: 3.5px solid #ca0c21">
+                    <h6>Shree Kalraj Mishra</h6>
+                    <p>Hon'ble Governor, Rajasthan</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./image/index/chimki_bheel-removebg-preview.png" alt="pic" width="45%"
+                        style="border-radius: 50%; border: 3.5px solid #ca0c21" class="mt-5">
+                    <h6>Smt. Chimki Bheel</h6>
+                    <p>Sarpanch <br>Doli, Jodhpur</p>
                 </div>
             </div>
         </div>
@@ -288,17 +381,12 @@
                     <div class="card shadow p-3">
                         <div class="row">
                             <div class="col-12 col-md-9 mb-4 order-2">
-                                <span class="font-size-18">Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Inventore repellat eaque, nostrum praesentium ducimus
-                                    omnis expedita in esse officia pariatur reiciendis fugit. Autem at voluptatum unde
-                                    impedit sed dolorem quibusdam.
+                                <span class="text-primary fs-3">कुलपति महोदय का संदेश</span><br>
+                                <span class="font-size-18 ">एमबीएम विश्वविद्यालय, जोधपुर की ओर से, यह बताते हुए अत्यंत हर्ष है कि राज्यपाल के आदेशानुसार विश्वविद्यालय ने डोली गाँव को गोद लिया है , जिसके अंतर्गत डोली गाँव को शिक्षा, स्वच्छता और बुनियादी ढांचे के क्षेत्र में विकसित करने का प्रयास है|
                                 </span>
                                 <br>
                                 <br>
-                                <span class="font-size-18">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Illum voluptatibus in, illo dignissimos perspiciatis quibusdam fuga vero nesciunt
-                                    velit veritatis officia doloremque laboriosam, itaque aspernatur debitis ratione
-                                    voluptatem assumenda fugit.</span>
+                                <span class="font-size-18">विश्वविद्यालय डोली गाँव के विभिन्न विकास परियोजनाओं जैसे स्कूलों में तकनीकी शिक्षा की व्यवस्था, गाँव में स्वच्छता एवं गुणवत्तापूर्ण पेयजल की आपूर्ति आदि में सक्रिय होकर सहयोग के लिए पूर्ण रूप से प्रयासरत है।विश्वविद्यालय इस गाँव की उन्नति और सुधार के प्रति हर क्षण प्रतिबद्ध है।.</span>
                                 <div class="d-flex mt-2">
                                     <button
                                         class="btn btn-primary mt-3 rounded-0 py-2 mx-0 text-uppercase hover-bg-black shadow-none">Read
@@ -315,12 +403,11 @@
                             <div class="col-12 col-md-3 mb-3 order-1 order-md-2">
                                 <div class="img-box border pt-4 pb-1 text-center">
                                     <div style="background-color: #ecae50;" class="w-75 m-auto">
-                                        <img src="https://api.mbm.ac.in/assets/79c991fe-74f1-497a-acec-2b516d95f651"
-                                            style="object-fit: contain;" class="w-100" />
+                                        <img src="./image/index/mbmu-vc-image.jpg" style="object-fit: contain;" class="w-100" />
                                     </div>
                                     <div class="px-1 mt-3">
-                                        <h5 class="font-size-18 mt-2 fw-600">Panchayat President, Doli</h5>
-                                        <h5 class="font-size-18 text-primary fw-600">Unknown Kumari</h5>
+                                        <p style="color: #002366; font-size: 15px; font-weight: 400;">Prof. Ajay Kumar Sharma</p>
+                                        <p class="text-muted" style="font-size: 12px;">Hon'ble Vice Chancellor MBM University, Jodhpur</p>
                                     </div>
                                 </div>
                             </div>
@@ -380,28 +467,28 @@
                                 <img src="https://api.mbm.ac.in/assets/ee1d42c1-aa81-4ae5-935b-f610c90ff036"
                                     class="w-100" alt="">
                                 <div class="bg-primary p-2 text-white">
-                                    Lorem ipsum, dolor sit amet conse adipisicing elit.
+                                    राजकीय उच्च माध्यमिक विद्यालय, डोली
                                 </div>
                             </div>
                             <div class="col-12 col-md-3 mb-3"><img
                                     src="https://api.mbm.ac.in/assets/1235e972-8533-4ea0-865b-7880bd4005b9"
                                     class="w-100" alt="">
                                 <div class="bg-primary p-2 text-white">
-                                    Lorem ipsum, dolor sit amet conse adipisicing elit.
+                                    उप स्वास्थ्य केंद्र, डोली
                                 </div>
                             </div>
                             <div class="col-12 col-md-3 mb-3"><img
                                     src="https://api.mbm.ac.in/assets/37deb942-56d1-4e32-9021-c53d2e8601cd"
                                     class="w-100" alt="">
                                 <div class="bg-primary p-2 text-white">
-                                    Lorem ipsum, dolor sit amet conse adipisicing elit.
+                                    नर्सरी, डोली
                                 </div>
                             </div>
                             <div class="col-12 col-md-3 mb-3">
                                 <img src="https://api.mbm.ac.in/assets/ee1d42c1-aa81-4ae5-935b-f610c90ff036"
                                     class="w-100" alt="">
                                 <div class="bg-primary p-2 text-white">
-                                    Lorem ipsum, dolor sit amet conse adipisicing elit.
+                                    डाकघर , डोली
                                 </div>
                             </div>
                         </div>
@@ -601,74 +688,36 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <!-- footer -->
-    <footer style="background-color: #1747a0;" class="py-5">
+    <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-3 mb-3">
-                    <a href="#" class="text-decoration-none">
-                        <div class="bg-white p-3 mb-2 d-flex align-items-center">
-                            <img src="https://api.mbm.ac.in/assets/8e24608e-e76c-4998-b4a2-64c90b2b9751" class="w-25" />
-                            <div class="ps-3">
-                                <p class="mb-0" style="color: orange;">मेरा गाँव</p>
-                                <p class="mb-0" style="color: green;">मेरी पहचान</p>
-                            </div>
-                        </div>
-                        <span class="text-white fw-500">
-                            Doli Village, Jodhpur
-                        </span>
-                    </a>
+            <div class="row foot">
+                <div class="col-lg-4">
+                    <img src="./image/footer-logo.png" alt="logo" width="100%">
                 </div>
-                <div class="col-12 col-md-2 mb-3">
-                    <ul style="list-style: none;">
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">About Doli</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Gallery</a>
-                        </li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Offices</a>
-                        </li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Information</a>
-                        </li>
+                <div class="col-lg-4">
+                    <ul>
+                        <li><a href="about.html" class="text-decoration-none text-white">About Doli</a></li>
+                        <li><a href="gallery.html" class="text-decoration-none text-white">Gallery</a></li>
+                        <li><a href="office.html" class="text-decoration-none text-white">Offices</a></li>
+                        <li><a href="info.html" class="text-decoration-none text-white">Information</a></li>
+                        <li><a href="contact.html" class="text-decoration-none text-white">Contact Us</a></li>
+                        <li><a href="suggestion.html" class="text-decoration-none text-white">Suggestions</a></li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-2 mb-3">
-                    <ul style="list-style: none;">
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Suggestions</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-5">
-                    <div style="background-color: #002366;" class="rounded p-3" id="mbm-intro">
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <img src="https://api.mbm.ac.in/assets/09cddce6-d3ad-4e8a-a71a-cd8ebad1137b"
-                                    class="w-25" />
-                            </div>
-                            <div class="col-12 text-center">
-                                <div class="pt-3 mt-3 border-top">
-                                    <h6 class="text-white">Developed Under the Village Adoption Initiative by MBM
-                                        University, Jodhpur</h6>
-                                    <h4>
-                                        <a class="text-decoration-none" href="#"
-                                            style="color: #ff9e6e;">www.mbm.ac.in</a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-4">
+                    <img src="./image/mbm2.png" alt="logo" width="100%">
                 </div>
             </div>
         </div>
     </footer>
-    <div class="container">
-        <h6 class="text-center py-2 mb-0">
-            <a href="#" class="text-dark text-decoration-none">© 2021 Doli Village, Jodhpur. All Rights
-                Reserved.</a>
-        </h6>
+    <div class=" text-center my-4 ">
+        <p style="font-size: 16px; color: rgba(33, 33, 33, .7);">© 2024 Doli Village, Jodhpur. All Rights Reserved.
+        </p>
     </div>
-    <div class="bg-primary">
-        <h6 class="text-center py-2 text-white mb-0">
-            This site is designed, hosted and maintained by
-            <a href="#" class="text-decoration-none" style="color: #ff9e6e;">MBM University</a>
-        </h6>
+    <div style="background-color:rgba(0, 28, 82, 1); padding: 12px; font-size: 16px; font-weight: 400;">
+        <p class="text-center text-white my-2">This site is designed, hosted and maintained by <a
+                href="https://mbm.ac.in/" style="color: #ff9e6e; text-decoration: none;">MBM University </a></p>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
